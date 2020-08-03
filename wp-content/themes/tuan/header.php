@@ -1,4 +1,6 @@
-<?php ?>
+<?php
+echo "HELLO";
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
