@@ -1,0 +1,8 @@
+2020-08-09T12:40:16+00:00 CRITICAL syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING), expecting ';' in D:\project\energry.local\wp-content\themes\tuan\part\func.php on line 39
+
+2020-08-09T12:40:17+00:00 CRITICAL syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING), expecting ';' in D:\project\energry.local\wp-content\themes\tuan\part\func.php on line 39
+
+2020-08-09T12:42:55+00:00 CRITICAL syntax error, unexpected '}', expecting ';' in D:\project\energry.local\wp-content\themes\tuan\part\func.php on line 43
+
+2020-08-09T12:46:23+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in D:\project\energry.local\wp-content\themes\tuan\part\block\intro.php on line 15
+
