@@ -5,112 +5,44 @@
         <div class="row">
             <div class="offset-lg-2 col-lg-8 text-center">
                 <h4 class="special-heading">
-                    Our Services
+                    Dịch vụ của chúng tôi
                 </h4>
                 <p class="special-heading">
-                    For more information about your local Minnesota insulation contractor, check out the following
-                    insulation services we offer and our blog posts
+                    Mang đến sự tận tâm, ưu đãi tốt, nhanh chất lượng
                 </p>
                 <div class="divider-40 divider-lg-53"></div>
             </div>
             <div class="col-sm-12">
-                <div class="owl-carousel owl-shadow-items" data-margin="60" data-responsive-lg="3" data-responsive-sm="2" data-responsive-xs="1" data-nav="false" data-loop="false" data-autoplay="false">
+                <div class="owl-carousel owl-shadow-items" data-margin="60" data-responsive-lg="3"
+                     data-responsive-sm="2" data-responsive-xs="1" data-nav="false" data-loop="false"
+                     data-autoplay="false">
+                    <?php
+                    query_posts([
+                        'post_type' => 'service',
+                        'posts_per_page' => 12,
+                        'order' => 'DESC',
+                        'orderby' => 'date'
+                    ]);
+                    if (have_posts()) : while (have_posts()) : the_post();
 
-                    <div class="service-item vertical-item content-padding padding-small box-shadow">
-                        <div class="item-media">
-                            <img src="<?= ASSET?>/images/service/01.jpg" alt="">
-                            <div class="media-links">
-                                <a class="abs-link" title="" href="service-single.html"></a>
+                        ?>
+                        <div class="service-item vertical-item content-padding padding-small box-shadow">
+                            <div class="item-media">
+                                <img src="<?= resize_image(get_the_post_thumbnail_url(get_the_ID(),'full'),[350,250])?>" alt="">
+                                <div class="media-links">
+                                    <a class="abs-link" title="" href="<?= get_the_permalink()?>"></a>
+                                </div>
+                            </div>
+                            <div class="item-content">
+                                <h6 class="mb-20 mb-lg-30">
+                                    <a href="<?= get_the_permalink()?>"><?= get_the_title()?></a>
+                                </h6>
+                                <p class="mb-20 mb-lg-33 text-2"><?= get_the_excerpt() ?>
+                                <a class="btn-link with-icon" href="service-single.html">Chi tiết dịch vụ</a>
                             </div>
                         </div>
-                        <div class="item-content">
-                            <h6 class="mb-20 mb-lg-30">
-                                <a href="service-single.html">Fiberglass Insulation</a>
-                            </h6>
-                            <p class="mb-20 mb-lg-33">Our company offers Fiberglass Insulation, Cellulose Insulation </p>
-                            <a class="btn-link with-icon" href="service-single.html">View Services</a>
-                        </div>
-                    </div>
-
-                    <div class="service-item vertical-item content-padding padding-small box-shadow">
-                        <div class="item-media">
-                            <img src="<?= ASSET?>/images/service/02.jpg" alt="">
-                            <div class="media-links">
-                                <a class="abs-link" title="" href="service-single.html"></a>
-                            </div>
-                        </div>
-                        <div class="item-content">
-                            <h6 class="mb-20 mb-lg-30">
-                                <a href="service-single.html">Cellulose Insulation</a>
-                            </h6>
-                            <p class="mb-20 mb-lg-33">Spray Foam Insulation, as well as Insulation Ventilation Services </p>
-                            <a class="btn-link with-icon" href="service-single.html">View Services</a>
-                        </div>
-                    </div>
-
-                    <div class="service-item vertical-item content-padding padding-small box-shadow">
-                        <div class="item-media">
-                            <img src="<?= ASSET?>/images/service/03.jpg" alt="">
-                            <div class="media-links">
-                                <a class="abs-link" title="" href="service-single.html"></a>
-                            </div>
-                        </div>
-                        <div class="item-content">
-                            <h6 class="mb-20 mb-lg-30">
-                                <a href="service-single.html">Closed Cell Spray Foam</a>
-                            </h6>
-                            <p class="mb-20 mb-lg-33">Depending on what your specific property needs</p>
-                            <a class="btn-link with-icon" href="service-single.html">View Services</a>
-                        </div>
-                    </div>
-
-                    <div class="service-item vertical-item content-padding padding-small box-shadow">
-                        <div class="item-media">
-                            <img src="<?= ASSET?>/images/service/04.jpg" alt="">
-                            <div class="media-links">
-                                <a class="abs-link" title="" href="service-single.html"></a>
-                            </div>
-                        </div>
-                        <div class="item-content">
-                            <h6 class="mb-20 mb-lg-30">
-                                <a href="service-single.html">Blown-In Attic Insulation</a>
-                            </h6>
-                            <p class="mb-20 mb-lg-33">Pellentesque habitant morbi tristique senectus</p>
-                            <a class="btn-link with-icon" href="service-single.html">View Services</a>
-                        </div>
-                    </div>
-
-                    <div class="service-item vertical-item content-padding padding-small box-shadow">
-                        <div class="item-media">
-                            <img src="<?= ASSET?>/images/service/05.jpg" alt="">
-                            <div class="media-links">
-                                <a class="abs-link" title="" href="service-single.html"></a>
-                            </div>
-                        </div>
-                        <div class="item-content">
-                            <h6 class="mb-20 mb-lg-30">
-                                <a href="service-single.html">Whole-Home Insulation</a>
-                            </h6>
-                            <p class="mb-20 mb-lg-33"> Aliquam blandit mi non augue vestibulum tincidunt cinia metus </p>
-                            <a class="btn-link with-icon" href="service-single.html">View Services</a>
-                        </div>
-                    </div>
-
-                    <div class="service-item vertical-item content-padding padding-small box-shadow">
-                        <div class="item-media">
-                            <img src="<?= ASSET?>/images/service/06.jpg" alt="">
-                            <div class="media-links">
-                                <a class="abs-link" title="" href="service-single.html"></a>
-                            </div>
-                        </div>
-                        <div class="item-content">
-                            <h6 class="mb-20 mb-lg-30">
-                                <a href="service-single.html">Commercial Applications</a>
-                            </h6>
-                            <p class="mb-20 mb-lg-33">Fusce finibus convallis elit sit vestibulum amet ultrices</p>
-                            <a class="btn-link with-icon" href="service-single.html">View Services</a>
-                        </div>
-                    </div>
+                    <?php endwhile;endif;
+                    wp_reset_query(); ?>
 
                 </div>
             </div>
