@@ -1527,7 +1527,7 @@
                 margin: 30,
                 nav: false,
                 dots: false,
-                items: 3,
+                items: 2,
                 navText: ['<i class="ico ico-arrow-left"></i>', '<i class="ico ico-arrow-right"></i>'],
                 responsive: {
                     0: {
@@ -1540,7 +1540,7 @@
                         items: 2
                     },
                     1200: {
-                        items: 3
+                        items: 2
                     }
                 }
             });

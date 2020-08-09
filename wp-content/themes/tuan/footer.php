@@ -108,6 +108,7 @@
 </div>
 <?php wp_footer(); ?>
 <script src="<?= ASSET ?>/js/compressed.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollToFixed/1.0.8/jquery-scrolltofixed-min.js"></script>
 <script src="<?= ASSET ?>/js/main.js"></script>
 <script src="<?= ASSET ?>/js/site.js?v=<?= time()?>"></script>
 

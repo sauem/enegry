@@ -69,3 +69,9 @@ li.media h4{
 .more-link{
   display: none;
 }
+.sticky-div{
+  &.scroll-to-fixed-fixed{
+    overflow-y: scroll;
+    max-height: 80vh;
+  }
+}
