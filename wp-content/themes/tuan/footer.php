@@ -109,7 +109,6 @@
 <?php wp_footer(); ?>
 <script src="<?= ASSET ?>/js/compressed.js"></script>
 <script src="<?= ASSET ?>/js/main.js"></script>
-<script src="<?= ASSET ?>/js/switcher.js"></script>
 <script src="<?= ASSET ?>/js/site.js?v=<?= time()?>"></script>
 
 </body>

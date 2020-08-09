@@ -12,24 +12,24 @@
 
 get_header(); ?>
 
-<div class="wrap">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentyseventeen' ); ?></h1>
-				</header><!-- .page-header -->
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentyseventeen' ); ?></p>
-
-					<?php get_search_form(); ?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- .wrap -->
+    <section class="ds s-pt-145 s-pb-100 s-pt-lg-195 s-pb-lg-150 s-pt-xl-240 s-pb-xl-195 s-overlay error-404 not-found page_404 s-overlay error-404">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="img_404">
+                        <img src="<?= ASSET?>/images/img404.png" alt="">
+                    </div>
+                    <div class="page-content">
+                        <h5>Oops, Sorry We Can’t Find That Page!</h5>
+                        <p class="buttons_404 ">
+                            <a href="index.html" class="btn btn-small with-icon btn-maincolor back-page">Go Back</a>
+                        </p>
+                    </div>
+                    <!-- .page-content -->
+                </div>
+            </div>
+        </div>
+    </section>
 
 <?php
 get_footer();

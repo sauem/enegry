@@ -35,3 +35,9 @@ function resize_image($url , $size = []){
 function getImageID($post , $size = "full"){
     return get_the_post_thumbnail_url($post, $size);
 }
+function staticInfo($key,$img = false){
+    if(!$img){
+        return get_post_meta(39,$key,TRUE);
+    }
+    return wp_get_attachment_image_url(get_post_meta(39,$key,TRUE),'full');
+}

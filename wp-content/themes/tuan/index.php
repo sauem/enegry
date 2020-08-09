@@ -16,6 +16,13 @@
  */
 
 get_header(); ?>
-    <?= get_template_part("part/slider")?>
+    <?php get_template_part("part/slider")?>
+
+    <?php get_template_part('part/block/intro')?>
+    <?php get_template_part('part/block/project')?>
+    <?php get_template_part('part/block/service')?>
+    <?php get_template_part('part/block/step')?>
+    <?php get_template_part('part/block/blog')?>
+
 <?php
 get_footer();

@@ -8,8 +8,8 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="my-15 my-md-0 col-xl-2 col-md-4 col-11">
-                    <a href="index.html" class="logo">
-                        <img src="<?= ASSET?>/images/logo.png" alt="">
+                    <a href="<?= home_url()?>" class="logo">
+                        <img src="<?= get_logo()?>" alt="<?= get_option("blogname")?>">
                     </a>
                 </div>
                 <div class="col-xl-8 col-1 order-3 order-lg-2">
