@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="<?= ASSET ?>/css/main.css" class="color-switcher-link">
     <link rel="stylesheet" href="<?= ASSET ?>/css/shop.css" class="color-switcher-link">
     <link rel="stylesheet" href="<?= ASSET ?>/css/site.css?v=<?= time() ?>">
-    <script src="<?= ASSET ?>/js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="<?= ASSET ?>/js/vendor/jquery-1.12.4.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </head>
 
 <body <?php body_class(); ?>>

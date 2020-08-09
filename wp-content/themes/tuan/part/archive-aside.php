@@ -3,7 +3,7 @@
 <aside class="col-lg-5 col-xl-4">
 
     <div class="widget widget_categories">
-        <h5 class="widget-title">Danh mục</h5>
+        <h5 class="widget-title">Chuyên mục</h5>
         <ul>
             <?= wp_list_categories([
                 'current_category' => true,
@@ -14,9 +14,21 @@
         </ul>
 
     </div>
+    <div class="widget widget_categories">
+        <h5 class="widget-title">Dự án</h5>
+        <ul>
+            <?= wp_list_categories([
+                'current_category' => true,
+                'depth' => 2,
+                'taxonomy' => 'product_cat',
+                'echo' => 1,
+                'title_li' => "",
+            ]) ?>
+        </ul>
 
+    </div>
     <div class="widget widget_recent_posts">
-        <h5 class="widget-title">Dự án nổi bật</h5>
+        <h5 class="widget-title">Sản phẩm</h5>
         <ul class="list-unstyled">
             <li class="media">
                 <a class="media-image" href="blog-single-right.html">

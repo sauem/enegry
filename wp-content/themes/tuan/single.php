@@ -51,7 +51,7 @@ if (have_posts()): while (have_posts()): the_post();
                             </div>
                         </div>
                     </article>
-                    <?= get_template_part("item-related-post")?>
+                    <?php get_template_part("part/item-related-post")?>
                 </main>
                 <?= get_template_part("part/archive-aside") ?>
             </div>

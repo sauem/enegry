@@ -1,0 +1,14 @@
+.post{
+  &.owl-carousel{
+    .item{
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 200px;
+      position: relative;
+      .title{
+        position: absolute;
+      }
+    }
+  }
+}
